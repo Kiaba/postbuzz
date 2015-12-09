@@ -4,7 +4,8 @@ angular.module('postbuzzApp')
   .config(function($stateProvider) {
     $stateProvider
       .state('main', {
-        url: '/',
+        'abstract': true,
+        url: null,
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'

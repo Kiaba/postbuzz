@@ -10,7 +10,10 @@ angular.module('postbuzzApp', [
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/');
+      .otherwise('/login');
 
     $locationProvider.html5Mode(true);
-  });
+  })
+  .run(function($rootScope) {
+	$rootScope.account = null;
+  })

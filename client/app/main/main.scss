@@ -25,3 +25,21 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.first-name {
+  font-size:17px;
+  text-transform:capitalize;
+}
+
+.last-name {
+  font-size:17px;
+  text-transform:capitalize;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
